@@ -8,8 +8,7 @@
 
 short Pow(short number, short pow)
 {
-	return(pow == 0) ? 1 : number * Pow(number, pow - 1);
-
+	return (pow <= 1) ? number : number * Pow(number, pow - 1);
 }
 
 int main()
